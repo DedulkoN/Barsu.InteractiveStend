@@ -1,0 +1,10 @@
+D:\Git\Barsu.InteractiveStend\InteractiveStend\bin\Debug\InteractiveStend.exe.config
+D:\Git\Barsu.InteractiveStend\InteractiveStend\bin\Debug\InteractiveStend.exe
+D:\Git\Barsu.InteractiveStend\InteractiveStend\bin\Debug\InteractiveStend.pdb
+D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\InteractiveStend.csprojAssemblyReference.cache
+D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\InteractiveStend.FormMain.resources
+D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\InteractiveStend.Properties.Resources.resources
+D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\InteractiveStend.csproj.GenerateResource.cache
+D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\InteractiveStend.csproj.CoreCompileInputs.cache
+D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\InteractiveStend.exe
+D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\InteractiveStend.pdb
