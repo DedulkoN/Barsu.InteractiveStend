@@ -8,3 +8,8 @@ D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\InteractiveStend.csproj
 D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\InteractiveStend.csproj.CoreCompileInputs.cache
 D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\InteractiveStend.exe
 D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\InteractiveStend.pdb
+D:\Git\Barsu.InteractiveStend\InteractiveStend\bin\Debug\Interop.WMPLib.dll
+D:\Git\Barsu.InteractiveStend\InteractiveStend\bin\Debug\AxInterop.WMPLib.dll
+D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\Interop.WMPLib.dll
+D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\AxInterop.WMPLib.dll
+D:\Git\Barsu.InteractiveStend\InteractiveStend\obj\Debug\InteractiveStend.csproj.ResolveComReference.cache
