@@ -33,13 +33,18 @@
             // 
             // webBrowser1
             // 
+            this.webBrowser1.DataBindings.Add(new System.Windows.Forms.Binding("Url", global::InteractiveStend.Properties.Settings.Default, "URLforStart", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            this.webBrowser1.ScrollBarsEnabled = false;
             this.webBrowser1.Size = new System.Drawing.Size(1021, 527);
             this.webBrowser1.TabIndex = 0;
-            this.webBrowser1.Url = new System.Uri("http://my.abit.barsu.by", System.UriKind.Absolute);
+            this.webBrowser1.Url = global::InteractiveStend.Properties.Settings.Default.URLforStart;
+            this.webBrowser1.WebBrowserShortcutsEnabled = false;
             // 
             // FormMain
             // 
