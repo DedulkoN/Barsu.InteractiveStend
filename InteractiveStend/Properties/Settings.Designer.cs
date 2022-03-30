@@ -34,5 +34,29 @@ namespace InteractiveStend.Properties {
                 this["URLforStart"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\Git\\Barsu.InteractiveStend\\Videos\\")]
+        public string FolderVideos {
+            get {
+                return ((string)(this["FolderVideos"]));
+            }
+            set {
+                this["FolderVideos"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("15")]
+        public int TimeForVideoStart {
+            get {
+                return ((int)(this["TimeForVideoStart"]));
+            }
+            set {
+                this["TimeForVideoStart"] = value;
+            }
+        }
     }
 }

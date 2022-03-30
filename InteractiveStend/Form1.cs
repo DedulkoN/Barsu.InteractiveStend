@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.IO;
+using System.Configuration;
 
 
 namespace InteractiveStend
@@ -47,23 +49,40 @@ namespace InteractiveStend
             return ((idleTime > 0) ? (idleTime / 1000) : 0);
         }
 
+        private WMPLib.IWMPPlaylist playlist;
         public FormMain()
         {
-            InitializeComponent();
-            axWindowsMediaPlayer1.Ctlcontrols.pause();
-            axWindowsMediaPlayer1.Visible = false;
+            InitializeComponent();            
+               
 
+                string folder = global::InteractiveStend.Properties.Settings.Default.FolderVideos;            
+
+
+               playlist = axWindowsMediaPlayer1.playlistCollection.newPlaylist("myplaylist");
+                playlist.clear();
+
+                string[] filesin = Directory.GetFiles(folder);
+                foreach (string file in filesin)
+                {
+                    WMPLib.IWMPMedia media = axWindowsMediaPlayer1.newMedia(file);
+                    playlist.appendItem(media);
+                }
+                axWindowsMediaPlayer1.currentPlaylist = playlist;
+           
+           
+
+           
         }
 
       
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (GetLastInputTime() == 30)
+            if (GetLastInputTime() == Properties.Settings.Default.TimeForVideoStart)
             {
                 StartVideo();
             }
-            else if (GetLastInputTime()==0)
+            else if (GetLastInputTime()<10)
             {
                 StopVideo();
             }
@@ -96,6 +115,12 @@ namespace InteractiveStend
         private void axWindowsMediaPlayer1_MouseMoveEvent(object sender, AxWMPLib._WMPOCXEvents_MouseMoveEvent e)
         {
             StopVideo();
+        }
+
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            StopVideo();
+            axWindowsMediaPlayer1.playlistCollection.remove(playlist);
         }
     }
 }

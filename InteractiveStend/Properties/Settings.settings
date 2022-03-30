@@ -5,5 +5,11 @@
     <Setting Name="URLforStart" Type="System.Uri" Scope="User">
       <Value Profile="(Default)">D:\Git\Barsu.InteractiveStend\Pages\index.html</Value>
     </Setting>
+    <Setting Name="FolderVideos" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Git\Barsu.InteractiveStend\Videos\</Value>
+    </Setting>
+    <Setting Name="TimeForVideoStart" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
