@@ -25,18 +25,6 @@ namespace InteractiveStend.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\Git\\Barsu.InteractiveStend\\Pages\\index.html")]
-        public global::System.Uri URLforStart {
-            get {
-                return ((global::System.Uri)(this["URLforStart"]));
-            }
-            set {
-                this["URLforStart"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("D:\\Git\\Barsu.InteractiveStend\\Videos\\")]
         public string FolderVideos {
             get {
@@ -56,6 +44,18 @@ namespace InteractiveStend.Properties {
             }
             set {
                 this["TimeForVideoStart"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://rasp.barsu.by")]
+        public global::System.Uri URLforStart {
+            get {
+                return ((global::System.Uri)(this["URLforStart"]));
+            }
+            set {
+                this["URLforStart"] = value;
             }
         }
     }

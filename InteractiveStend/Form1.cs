@@ -12,8 +12,11 @@ using System.IO;
 using System.Configuration;
 
 
+
 namespace InteractiveStend
 {
+
+    
     public partial class FormMain : Form
     {
 
@@ -52,13 +55,14 @@ namespace InteractiveStend
         private WMPLib.IWMPPlaylist playlist;
         public FormMain()
         {
-            InitializeComponent();            
-               
+            ClassRegister.GetBrowserVersion();
+            InitializeComponent();
+            
 
                 string folder = global::InteractiveStend.Properties.Settings.Default.FolderVideos;            
 
 
-               playlist = axWindowsMediaPlayer1.playlistCollection.newPlaylist("myplaylist");
+               playlist = axWindowsMediaPlayer1.playlistCollection.newPlaylist("TempPlayList");
                 playlist.clear();
 
                 string[] filesin = Directory.GetFiles(folder);
@@ -90,9 +94,12 @@ namespace InteractiveStend
 
         private void StartVideo()
         {
-            axWindowsMediaPlayer1.Visible = true;
-            axWindowsMediaPlayer1.Ctlcontrols.play();
-            axWindowsMediaPlayer1.fullScreen = true;
+            if (playlist.count > 0)
+            {
+                axWindowsMediaPlayer1.Visible = true;
+                axWindowsMediaPlayer1.Ctlcontrols.play();
+                axWindowsMediaPlayer1.fullScreen = true;
+            }
         }
 
         private void StopVideo()
@@ -120,7 +127,9 @@ namespace InteractiveStend
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             StopVideo();
+            
             axWindowsMediaPlayer1.playlistCollection.remove(playlist);
+            MessageBox.Show("!!");
         }
     }
 }

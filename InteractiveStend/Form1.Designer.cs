@@ -44,7 +44,6 @@
             // 
             // axWindowsMediaPlayer1
             // 
-            this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
@@ -66,7 +65,7 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
             this.webBrowser1.ScrollBarsEnabled = false;
-            this.webBrowser1.Size = new System.Drawing.Size(1021, 527);
+            this.webBrowser1.Size = new System.Drawing.Size(1021, 642);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = global::InteractiveStend.Properties.Settings.Default.URLforStart;
             this.webBrowser1.WebBrowserShortcutsEnabled = false;
@@ -75,7 +74,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1021, 527);
+            this.ClientSize = new System.Drawing.Size(1021, 642);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.webBrowser1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

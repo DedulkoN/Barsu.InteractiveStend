@@ -2,14 +2,14 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="InteractiveStend.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="URLforStart" Type="System.Uri" Scope="User">
-      <Value Profile="(Default)">D:\Git\Barsu.InteractiveStend\Pages\index.html</Value>
-    </Setting>
     <Setting Name="FolderVideos" Type="System.String" Scope="User">
       <Value Profile="(Default)">D:\Git\Barsu.InteractiveStend\Videos\</Value>
     </Setting>
     <Setting Name="TimeForVideoStart" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="URLforStart" Type="System.Uri" Scope="User">
+      <Value Profile="(Default)">http://rasp.barsu.by</Value>
     </Setting>
   </Settings>
 </SettingsFile>
