@@ -129,7 +129,7 @@ namespace InteractiveStend
             StopVideo();
             
             axWindowsMediaPlayer1.playlistCollection.remove(playlist);
-            MessageBox.Show("!!");
+          
         }
     }
 }
