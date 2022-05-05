@@ -6,10 +6,16 @@
       <Value Profile="(Default)">D:\Git\Barsu.InteractiveStend\Videos\</Value>
     </Setting>
     <Setting Name="TimeForVideoStart" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">15</Value>
+      <Value Profile="(Default)">-1</Value>
     </Setting>
     <Setting Name="URLforStart" Type="System.Uri" Scope="User">
-      <Value Profile="(Default)">http://rasp.barsu.by</Value>
+      <Value Profile="(Default)">http://sdh.barsu.by</Value>
+    </Setting>
+    <Setting Name="TimeToMainPage" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="Zoom" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">1</Value>
     </Setting>
   </Settings>
 </SettingsFile>

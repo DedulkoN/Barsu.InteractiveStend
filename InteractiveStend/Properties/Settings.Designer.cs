@@ -37,7 +37,7 @@ namespace InteractiveStend.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("15")]
+        [global::System.Configuration.DefaultSettingValueAttribute("-1")]
         public int TimeForVideoStart {
             get {
                 return ((int)(this["TimeForVideoStart"]));
@@ -49,13 +49,37 @@ namespace InteractiveStend.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://rasp.barsu.by")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://sdh.barsu.by")]
         public global::System.Uri URLforStart {
             get {
                 return ((global::System.Uri)(this["URLforStart"]));
             }
             set {
                 this["URLforStart"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int TimeToMainPage {
+            get {
+                return ((int)(this["TimeToMainPage"]));
+            }
+            set {
+                this["TimeToMainPage"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public double Zoom {
+            get {
+                return ((double)(this["Zoom"]));
+            }
+            set {
+                this["Zoom"] = value;
             }
         }
     }
