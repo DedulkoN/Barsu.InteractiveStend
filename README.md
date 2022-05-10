@@ -20,4 +20,4 @@ The interactive whiteboard has touch control and runs on the Windows 10 operatin
 
 Some gestures were blocked by policies inside the operating system
 
-_*This is client-side only*_
+__This is client-side only__
