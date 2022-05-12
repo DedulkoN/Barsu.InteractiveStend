@@ -36,6 +36,10 @@ namespace InteractiveStend
         [DllImport("user32.dll")]
         static extern bool GetLastInputInfo(ref LASTINPUTINFO plii);
 
+        /// <summary>
+        /// Time has passed since the last user action in Windows
+        /// </summary>
+        /// <returns>sekonds for last input</returns>
         static int GetLastInputTime()
         {
             int idleTime = 0;
@@ -58,7 +62,9 @@ namespace InteractiveStend
        // private WMPLib.IWMPPlaylist playlist;
         public FormMain()
         {
-           // CefSharp.CefSharpSettings.FocusedNodeChangedEnabled = true;
+            // CefSharp.CefSharpSettings.FocusedNodeChangedEnabled = true;
+
+            //Turning on the virtual keyboard on CefSharp
             CefSettings settings = new CefSettings();
             settings.CefCommandLineArgs["touch-events"] = "enabled";
             settings.CefCommandLineArgs.Add("disable-usb-keyboard-detect", "1");
@@ -102,6 +108,11 @@ namespace InteractiveStend
 
         }
 
+        /// <summary>
+        /// Disconnecting scaling changes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ChromiumWebBrowser1_FrameLoadEnd(object sender, FrameLoadEndEventArgs e)
         {
             ChromiumWebBrowser browser = (ChromiumWebBrowser)sender;           
@@ -110,6 +121,11 @@ namespace InteractiveStend
             
         }
 
+        /// <summary>
+        /// Timer to track user activity
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timer1_Tick(object sender, EventArgs e)
         {           
             if (Properties.Settings.Default.TimeForVideoStart > 0)
@@ -132,6 +148,9 @@ namespace InteractiveStend
 
         }
 
+        /// <summary>
+        /// The function of turning on the video playing (disabled due to the exception of the terms, but it works, requires WindowsMedia player)
+        /// </summary>
         private void StartVideo()
         {
            /* if (playlist.count > 0)
@@ -181,7 +200,7 @@ namespace InteractiveStend
     }
 
     /// <summary>
-    /// меню по правому клику
+    /// Off ring-click menu
     /// </summary>
     public class CustomContextHandler : IContextMenuHandler
     {
@@ -208,7 +227,7 @@ namespace InteractiveStend
     }
 
     /// <summary>
-    /// перехват событий браузера
+    /// Browser interception (was written to call the screen keyboard, is not used in connection with finding a browser solution)
     /// </summary>
     class CMSRenderBrowser : IRenderProcessMessageHandler
     {
